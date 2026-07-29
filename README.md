@@ -1,24 +1,20 @@
-# README
+# Community Discourse Sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample Rails API app demonstrating a Community-to-Discourse integration for
+SSO, user sync, group/role sync, signed webhooks, and Snowflake-style event
+delivery.
 
-Things you may want to cover:
+## Verification
 
-* Ruby version
+```bash
+bundle exec rspec
+```
 
-* System dependencies
+## Docs
 
-* Configuration
+- `docs/discourse_integration_story.md`
+- `docs/senior_ruby_jd_topics.md`
 
-* Database creation
+## Profile
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+LinkedIn: https://www.linkedin.com/in/vinicius-gesteira-98a842132/
