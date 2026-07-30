@@ -37,6 +37,6 @@ RSpec.describe Discourse::SsoRedirectUrl do
     expect(parsed.email).to eq("alice@example.org")
     expect(parsed.username).to eq("alice")
     expect(parsed.moderator).to be(true)
-    expect(parsed.groups).to eq(["community-moderators"])
+    expect(parsed.groups).to eq([ "community-moderators" ])
   end
 end

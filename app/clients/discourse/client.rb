@@ -34,13 +34,13 @@ module Discourse
     end
 
     def add_user_to_group(group_id:, username:)
-      @client.group_add(group_id, usernames: [username])
+      @client.group_add(group_id, usernames: [ username ])
     rescue DiscourseApi::Error => e
       raise Error, e.message
     end
 
     def remove_user_from_group(group_id:, username:)
-      @client.group_remove(group_id, usernames: [username])
+      @client.group_remove(group_id, usernames: [ username ])
     rescue DiscourseApi::Error => e
       raise Error, e.message
     end

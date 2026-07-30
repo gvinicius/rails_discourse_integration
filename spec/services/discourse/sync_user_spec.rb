@@ -22,7 +22,7 @@ RSpec.describe Discourse::SyncUser do
         email: "alice@example.org",
         username: "alice",
         moderator: true,
-        groups: ["community-moderators"]
+        groups: [ "community-moderators" ]
       )
     )
 
