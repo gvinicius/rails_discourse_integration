@@ -28,5 +28,9 @@ module CommunityDiscourseSample
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # image_processing 2.0 no longer ships a backend, and the default :vips processor
+    # needs native libvips. ImageMagick is already available in dev and CI.
+    config.active_storage.variant_processor = :mini_magick
   end
 end
